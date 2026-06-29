@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "f6405f29-86e5-4c16-8333-f5e9dde8ec0d",
+    "name": "Santa API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56231119"
+  },
+  "item": [
+    {
+      "name": "Santa weather api Copy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/weather?lat=17.3843&lon=78.4583&appid=cf257748a1b3e6ee39a1156596794885&units=metric",
+          "protocol": "https",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "data",
+            "2.5",
+            "weather"
+          ],
+          "query": [
+            {
+              "key": "lat",
+              "value": "17.3843"
+            },
+            {
+              "key": "lon",
+              "value": "78.4583"
+            },
+            {
+              "key": "appid",
+              "value": "cf257748a1b3e6ee39a1156596794885"
+            },
+            {
+              "key": "units",
+              "value": "metric"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "0228bb72-c872-4489-b3da-94d16f804f5c",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "x-api-key",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://web3.santabrowser.com/api/user/7cf28bce6f1dd6e/isValid",
+          "protocol": "https",
+          "host": [
+            "web3",
+            "santabrowser",
+            "com"
+          ],
+          "path": [
+            "api",
+            "user",
+            "7cf28bce6f1dd6e",
+            "isValid"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Santa Copy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.santabrowser.com/quests/bff/v1/user/quest-status?clid=3d1d6f1aad72b0c",
+          "protocol": "https",
+          "host": [
+            "api",
+            "santabrowser",
+            "com"
+          ],
+          "path": [
+            "quests",
+            "bff",
+            "v1",
+            "user",
+            "quest-status"
+          ],
+          "query": [
+            {
+              "key": "clid",
+              "value": "3d1d6f1aad72b0c"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
